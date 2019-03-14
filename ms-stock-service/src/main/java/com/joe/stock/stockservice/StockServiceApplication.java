@@ -1,17 +1,15 @@
-package com.joe.stock.dbservice;
+package com.joe.stock.stockservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EnableEurekaClient
-@EnableJpaRepositories(basePackages = "com.joe.stock.dbservice.repository")
 @SpringBootApplication
-public class DbServiceApplication {
+public class StockServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DbServiceApplication.class, args);
+		SpringApplication.run(StockServiceApplication.class, args);
 	}
 
 }
