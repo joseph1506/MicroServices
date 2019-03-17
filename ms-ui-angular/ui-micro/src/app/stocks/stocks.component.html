@@ -1,0 +1,13 @@
+<div class="container">
+  <div>
+    <input type="text" placeholder="User" [(ngModel)]="user" id="username">
+  </div>
+  <div>
+    <input type="text" placeholder="Quote" [(ngModel)]="quote" id="quote">
+  </div>
+  <div id="buttons">
+    <button (click)="addQuote()">Add Quote</button>
+    <button (click)="retrieveQuotes()">RetrieveQuotes</button>
+  </div>
+
+</div>
